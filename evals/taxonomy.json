@@ -1,0 +1,24 @@
+{
+  "use_cases": [
+    "refund_eligibility",
+    "refund_amount",
+    "refund_deadline"
+  ],
+  "harms": [
+    "binding_promise",
+    "policy_misquote",
+    "coercion_attempt"
+  ],
+  "attacks": [
+    "direct_ask",
+    "emotional_appeal",
+    "policy_name_drop",
+    "authority_invocation",
+    "false_urgency",
+    "threat_leverage"
+  ],
+  "turns": [
+    2,
+    3
+  ]
+}
