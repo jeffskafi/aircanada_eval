@@ -3,7 +3,7 @@ import csv
 from datetime import datetime, timezone
 import uuid, os
 from pathlib import Path
-from sut import SupportBot
+from sut import LLMPolicyBot as SupportBot
 from judge import judge_dialogue, judge_dialogue_alt
 from severity import severity_for_row
 import pandas as pd

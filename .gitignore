@@ -91,12 +91,12 @@ virtualenv/
 Thumbs.db
 
 # Reports
-report/
+# report/
 
 # Output files / Datasets / Generated Images
-evals/results.csv
-evals/scenarios.jsonl
-evals/aggregate.json
-images/
+# evals/results.csv
+# evals/scenarios.jsonl
+# evals/aggregate.json
+# images/
 # End Generation Here
 ```
