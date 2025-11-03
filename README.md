@@ -32,9 +32,10 @@ Outputs:
 ```bash
 python src/report_gen.py
 # -> writes report/README.md (+ assets, + data)
+```
 
 ### 8) Residual risk (Low/Medium/High bands)
-```
+
 We roll up results by use case & tactic with Wilson CIs and a conservative risk index:
 
 ```bash
