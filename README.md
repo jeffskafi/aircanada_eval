@@ -34,7 +34,7 @@ python src/report_gen.py
 # -> writes report/README.md (+ assets, + data)
 
 ### 8) Residual risk (Low/Medium/High bands)
-
+```
 We roll up results by use case & tactic with Wilson CIs and a conservative risk index:
 
 ```bash
@@ -52,18 +52,6 @@ Index (judgment call, not a probability):
 
 ---
 
-## Why this fits Rune’s guidance
-
-- He said risk **quantification is hard**; avoid over‑claiming.  
-  → We use descriptive stats + CIs + tercile bands, not absolute probabilities.
-
-- He suggested a **top/middle/bottom third** judgment call.  
-  → That’s exactly how bands are assigned when there’s adequate coverage.
-
-- It draws a straight line from **incidents → severity → residual risk**, outputting something a **CX leader** can absorb quickly in the product/report.
-
----
-
 ### Quick smoke test
 
 ```bash
@@ -77,5 +65,3 @@ streamlit run streamlit_app.py
 - Check aggregate.json → has a "risk" key with by_use_case, by_attack, by_use_case_attack.
 - In Streamlit, open ⚠️ Residual risk; tables should populate.
 - In report/README.md, see Residual risk snapshot.
-
-If anything looks off, paste me your aggregate.json → I’ll pinpoint and fix.
